@@ -24,8 +24,8 @@ st.set_page_config(
 )
 
 # --- Title ---
-st.title("🧠 Parkinson’s Disease Detection Based on Spiral Handwriting (SVM + HOG)")
-st.caption("Upload a spiral drawing to analyze handwriting patterns for detecting Parkinson's Disease.")
+st.title("🧠 Parkinson’s Disease Detection Based on Spiral Handwriting 🌀")
+st.caption("Upload a spiral drawing to analyze handwriting patterns for detecting Parkinson's Disease using SVM + HOG.")
 
 # --- Load Model & Scaler ---
 @st.cache_resource
