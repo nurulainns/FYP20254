@@ -25,7 +25,7 @@ st.set_page_config(
 
 # --- Title ---
 st.title("🧠 Parkinson’s Disease Detection Based on Spiral Handwriting (SVM + HOG)")
-st.caption("Upload a spiral drawing to analyze handwriting patterns for potential Parkinson's indicators.")
+st.caption("Upload a spiral drawing to analyze handwriting patterns for detecting Parkinson's Disease.")
 
 # --- Load Model & Scaler ---
 @st.cache_resource
@@ -99,8 +99,8 @@ if uploaded_file and model_svm is not None:
                 st.success(f"**Result:** {CLASS_LABELS[prediction]}")
 
             # Metric for distance from decision boundary
-            st.metric("Confidence Score", f"{confidence:.4f}")
-            st.info("The confidence score reflects the distance from the SVM decision boundary.")
+            # st.metric("Confidence Score", f"{confidence:.4f}")
+            # st.info("The confidence score reflects the distance from the SVM decision boundary.")
 
         except Exception as e:
             st.error(f"An error occurred during processing: {e}")
