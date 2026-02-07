@@ -69,7 +69,6 @@ def preprocess_and_extract_hog(image_file):
 
 # --- Image Upload ---
 uploaded_file = st.file_uploader(
-    "Upload Spiral / Wave Image",
     type=["png", "jpg", "jpeg"]
 )
 
