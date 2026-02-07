@@ -68,7 +68,9 @@ def preprocess_and_extract_hog(image_file):
     return features.reshape(1, -1)
 
 # --- Image Upload ---
+# --- Image Upload ---
 uploaded_file = st.file_uploader(
+    "  ", # This is your label
     type=["png", "jpg", "jpeg"]
 )
 
